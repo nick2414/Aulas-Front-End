@@ -1,5 +1,17 @@
 /* REGRAS DE FORMATAÇÃO */
-body{
+body {
     font-family: 'Courier New', Courier, monospace;
-    background-image: url(../imagens/);
+    background-image: url(../imagens/tarde.jpg);
+    background-attachment: fixed; 
+    background-size: cover;
+}
+
+div{
+    background-color: lightsteelblue;
+    width: 70%;
+    height: auto;
+}
+
+img{
+    max-width: 100%;
 }
