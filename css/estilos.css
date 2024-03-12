@@ -6,12 +6,48 @@ body {
     background-size: cover;
 }
 
+/* ajustando a div do seu html */
 div{
     background-color: lightsteelblue;
     width: 70%;
     height: auto;
-}
+    border-radius: 9px;
+    padding: 16px;
 
+    /* adiciona sombras nas bordas */
+    box-shadow:purple 30px 5px 100px, blue -40px -40px  100px;
+
+  
+}
+/* tornando imagens responsivas e flexiveis */
 img{
     max-width: 100%;
 }
+figure{text-align:center;background-color: cadetblue;}
+
+
+/* ajustar o titulo(h1) */
+h1{
+    color: aliceblue;
+    font-family:Impact, Verdana, Arial,sans-serif;
+    text-transform:uppercase;
+    text-align:center;
+    background-color: rgba(35, 2, 164, 0.498);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-shadow:black 5px 5px;
+
+}
+
+
+
+
+/* Crie uma nova regra CSS para estilizar o elemento h1 com as seguintes caracteristicas:
+fonte: Impact, Verdana, Arial, sans elf
+cor do fundo: escura com um poouco de transparencia
+cor do texto clara 
+espaçamnto interno APENAS pra cima e pra baixo 
+letras maiusculas
+texto alinhao no meio */
