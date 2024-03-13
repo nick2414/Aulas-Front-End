@@ -2,63 +2,84 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     background-image: url(../imagens/tarde.jpg);
-    background-attachment: fixed; 
+    background-attachment: fixed;
     background-size: cover;
 }
 
 /* ajustando a div do seu html */
-div{
-    background-color: lightsteelblue;
+div {
+    background-color: white;
     width: 70%;
     height: auto;
     border-radius: 9px;
     padding: 16px;
+    margin: auto;
 
     /* adiciona sombras nas bordas */
-    box-shadow:purple 30px 5px 100px, blue -40px -40px  100px;
+    box-shadow: purple 30px 5px 100px, blue -40px -40px 100px;
 
-  
+
 }
+
 /* tornando imagens responsivas e flexiveis */
-img{
+img {
     max-width: 100%;
 }
-figure{text-align:center;background-color: cadetblue;}
+
+figure {
+    text-align: center;
+    background-color: cadetblue;
+}
 
 
 /* ajustar o titulo(h1) */
-h1{
+h1 {
     color: aliceblue;
-    font-family:Impact, Verdana, Arial,sans-serif;
-    text-transform:uppercase;
-    text-align:center;
+    font-family: Impact, Verdana, Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
     background-color: rgba(35, 2, 164, 0.498);
     padding-top: 10px;
     padding-bottom: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    text-shadow:black 5px 5px;
+    text-shadow: black 5px 5px;
 
 }
 
 /* ajustar o subtitulo(h2) */
 h2 {
     font-size: 20px;
-   border-bottom-style: solid;
-   border-bottom-width: 5px;
-   border-left-style: solid;
-   border-right-width: 20px;
-   padding-left: 20px;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-left-style: solid;
+    border-right-width: 20px;
+    padding-left: 20px;
 
 }
 
 
+/* Seletor TAG(vale pra todos os <a>) */
+a {
+    text-decoration: none;
+}
 
 
-/* Crie uma nova regra CSS para estilizar o elemento h1 com as seguintes caracteristicas:
-fonte: Impact, Verdana, Arial, sans elf
-cor do fundo: escura com um poouco de transparencia
-cor do texto clara 
-espaçamnto interno APENAS pra cima e pra baixo 
-letras maiusculas
-texto alinhao no meio */
+/* Seletor DESCENDENTE
+(vale pra todos os <a> CONTIDOS em <nav>) */
+nav a {
+    color: black;
+}
+
+figure img {
+    transform: scale(0.9);
+    transition: 1s;
+    filter: grayscale(100%);
+}
+
+
+/* usando o pseudo-classe :hover (ação de passar o mouse) */
+figure img:hover {
+    transform: scale(1) rotateX(360deg);
+    filter: grayscale(0);
+}
