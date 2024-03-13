@@ -23,7 +23,7 @@ body {
     font-style: groove;
 
     /* adiciona sombras nas bordas */
-    box-shadow: purple 10px 10px 10px, blue -10px -10px 10px;
+    box-shadow: rgb(55, 0, 255) 10px 10px 10px, rgb(255, 0, 0) -10px -10px 10px;
 
 
 }
@@ -51,6 +51,7 @@ h1 {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     text-shadow: black 5px 5px;
+    margin: 0;
 
 }
 
@@ -133,7 +134,7 @@ nav {
 nav a {
     color: white;
      font-weight: bold;
-     background-color: rgba(128, 128, 128, 0.507);
+     background-color: rgba(35, 2, 164, 0.498);
      display: inline-block;
      width: 50%;
      padding: 2%;
@@ -141,6 +142,18 @@ nav a {
 }
 
 /* Regra para o estado de acionamento dos links */
-nav a:hover{
+nav a:hover, nav a:focus{
     background-color: black;
 }
+
+
+nav a:first-child{
+border-bottom-left-radius: 8px;
+}
+
+nav a:last-child{
+    border-bottom-right-radius: 8px;
+}
+
+
+
