@@ -31,11 +31,15 @@ As regras vão valer para todos os elementos\tags desta pagina
 ### Como fazer uma regra CSS?
 seletor (propriedade: valor;)
 
-seletor(
+```CSS
+seletor{propriedades:valor;}
+seletor { 
     propriedades:valor;
     propriedades:valor;
     propriedades:valor;
-)
+    }
+    ```
+
 
 
 ### Externa
