@@ -1,11 +1,13 @@
 /* Seletor UNIVERSAL Alterando o comportamento do Box Model CSS. Usando esta regra evitamos os problemas as se usar width,height,paddig e border ao menso tempo
 ESSENCIAL EM TODOS OS HTML */
-*{box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 
 
 /* REGRAS DE FORMATAÇÃO */
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Segoe UI', Courier, monospace;
     background-image: url(../imagens/tarde.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -133,27 +135,86 @@ nav {
 /* regras para o estado inicial dos links */
 nav a {
     color: white;
-     font-weight: bold;
-     background-color: rgba(35, 2, 164, 0.498);
-     display: inline-block;
-     width: 50%;
-     padding: 2%;
-     transition: 1s;
+    font-weight: bold;
+    background-color: rgba(35, 2, 164, 0.498);
+    display: inline-block;
+    width: 50%;
+    padding: 2%;
+    transition: 1s;
 }
 
 /* Regra para o estado de acionamento dos links */
-nav a:hover, nav a:focus{
+nav a:hover,
+nav a:focus {
     background-color: black;
 }
 
 
-nav a:first-child{
-border-bottom-left-radius: 8px;
+nav a:first-child {
+    border-bottom-left-radius: 8px;
 }
 
-nav a:last-child{
+nav a:last-child {
     border-bottom-right-radius: 8px;
 }
 
+/* listas nao ordenada */
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
 
 
+ul li {
+    color: red;
+    list-style-type: none;
+}
+
+
+ul li::marker {
+    content: "🙀";
+    color: purple;
+    font-size: 14px;
+}
+
+/* pseudo-classes */
+ul li:first-child {
+    font-weight: border;
+}
+
+ul li:last-child {
+    font-style: italic;
+}
+
+ul li:nth-child(3) {
+    color: blue;
+}
+
+/* cores alternadas */
+ul li:nth-child(even) {
+    background-color: pink;
+}
+
+ul li:nth-child(odd) {
+    background-color: rgba(35, 2, 164, 0.498);
+}
+
+
+details {
+    border: solid 2px;
+}
+
+summary {
+    font-weight: bold;
+}
+
+
+summary::marker {
+    content: "👽";
+}
+
+details[open] summary::marker{
+    content: "👾";
+}
